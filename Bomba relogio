@@ -1,0 +1,6 @@
+c = 10
+print("inicio da contagem regressiva")
+for i in range(c):
+   print(c, "........")
+   c = c - 1
+print("boom!!!!!")
