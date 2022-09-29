@@ -1,0 +1,19 @@
+stop = 0
+while stop == 1 :
+ num1 = float (input("Infome o Primeiro número: "))
+ num2 = float (input("Infome o Segundo número: "))
+ print("1 - Soma")
+ print("2 - Subtração")
+ print("3 - Multiplicação")
+ print("4 - Divisão")
+ print("0 - Sair")
+ ope = int (input("Informe qual operação: "))
+ if ope == 0: break
+ def calculadora(num1, num2, ope) :
+     if (ope == 1)   : return num1 + num2
+     elif (ope == 2) : return num1 - num2
+     elif (ope == 3) : return num1 * num2
+     elif (ope == 4) : return num1 / num2
+     elif (ope < 0) or (ope > 4) : return "Não foi digitado um número valido logo 0"
+ resultado = calculadora(num1, num2, ope)
+ print(resultado)
