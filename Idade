@@ -1,0 +1,11 @@
+stop = False 
+while stop == False :
+ try:
+  nome = str (input("Qual o seu nome completo? "))
+  idade = int (input("Qual o ano do seu nascimento? "))
+  if (idade >= 1922) and (idade <= 2021):
+     idade = 2022 - idade
+     print (nome,"tem ",idade," anos ou irar completar em 2022!")
+     stop = True 
+ except:
+     print("voce digitou um dado invalido")
