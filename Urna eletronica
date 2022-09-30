@@ -43,21 +43,21 @@ while parar == False:
         while stop == False:   
          encerrar=str(input("Deseja encerrar a votação?[S/N]"))
          if (encerrar == "S"):
-             stop1=True
+             stop=True
              parar=True
          elif (encerrar == "N"):
-             stop1=True
+             stop=True
              parar=False
          else:
              print("Não foi possivel entender repita a resposta.")
     except:
         print("Não entendi")
 print("Você encerrou a votação") 
-if (x>y) and (x>z):
+if x>y and x>z:
     print("O candidato eleito foi o candidato_X")
-if (y>x) and (y>z):
+if y>x and y>z:
     print("O candidato eleito foi o candidato_Y")
-if (z>x) and (z>y):
+if z>x and z>y:
     print ("O candidato eleito foi o candidato_Z")
 else:
     print("Não tivemos candidato eleito foi um EMPATE")
