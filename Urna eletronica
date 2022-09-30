@@ -29,7 +29,7 @@ while parar == False:
                 v = 3
             else:
                 v = 0
-            return resu
+            return v
         resu = cont(voto)
         if resu == 1:
             x = x+1
