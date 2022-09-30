@@ -1,0 +1,67 @@
+#Desenvolva um código que simule uma eleição com três candidatos.
+#- candidato_X => 889
+#- candidato_Y => 847
+#- candidato_Z => 515
+#- branco => 0
+#O código deve perguntar se deseja finalizar a votação depois do voto. Caso o número do voto não corresponda 
+#a nenhum candidato ou seja branco, ele deve ser tratado como nulo. Se for inserido um texto ao invés de número,
+#o código deve retornar uma mensagem para votar novamente.
+#Quando a votação for finalizada, o código deverá mostrar o vencedor, aquele com o maior número de votos e,
+#também, a quantidade de votos de cada candidato, os brancos e nulos 
+x=0
+y=0
+z=0
+b=0 
+parar = False
+while parar == False:
+    print("candidato_X => 889")
+    print("candidato_Y => 847")
+    print("candidato_Z => 515")
+    print("branco => 0")
+    try:
+        voto=int(input("Qual o  número do seu candidato: "))
+        def cont (voto):
+            if voto == 889:
+                v = 1
+            elif voto == 847:
+                v = 2
+            elif voto == 515:
+                v = 3
+            else:
+                v = 0
+            return resu
+        resu = cont(voto)
+        if resu == 1:
+            x = x+1
+        if resu == 2:
+            y= y+1
+        if resu == 3:
+            z = z+1
+        if resu == 0 :
+            n = n+1
+        stop = False 
+        while stop == False:   
+         encerrar=str(input("Deseja encerrar a votação?[S/N]"))
+         if (encerrar == "S"):
+             stop1=True
+             parar=True
+         elif (encerrar == "N"):
+             stop1=True
+             parar=False
+         else:
+             print("Não foi possivel entender repita a resposta.")
+    except:
+        print("Não entendi")
+print("Você encerrou a votação") 
+if (x>y) and (x>z):
+    print("O candidato eleito foi o candidato_X")
+if (y>x) and (y>z):
+    print("O candidato eleito foi o candidato_Y")
+if (z>x) and (z>y):
+    print ("O candidato eleito foi o candidato_Z")
+else:
+    print("Não tivemos candidato eleito foi um EMPATE")
+print("Tivemos ",x," votos no candidato_X")
+print("Tivemos ",y," votos no candidato_Y")
+print("Tivemos ",z," votos no candidato_Z")
+print("Tivemos ",b," votos em branco.")
