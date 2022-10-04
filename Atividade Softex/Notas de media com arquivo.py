@@ -1,6 +1,6 @@
 import pandas as pd 
   
-df = pd.read_csv ("notas_alunos.csv") 
+df = pd.read_csv ("notas_alunos.csv.csv") 
   df = df.set_index ('Aluno') 
   media_aluno = ((df["Notas_1"] + df["Notas_2"]) / 2) 
   df['Media_Aluno'] = Media_Aluno 
