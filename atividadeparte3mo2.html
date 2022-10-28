@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function ola(){
+            console.log("Bem vindo ao site")
+        }
+        
+        function calcP1(n1,n2,ope){
+            resul = ope == "+" ? parseFloat(n1) + parseFloat(n2) : 0;
+            resul = ope == "-" ? parseFloat(n1) - parseFloat(n2) : resul;
+            resul = ope == "*" ? parseFloat(n1) * parseFloat(n2) : resul;
+            resul = ope == "/" ? parseFloat(n1) / parseFloat(n2) : resul;
+            return resul;
+        }
+
+        const calcP2 = (n1,n2,ope) => resul = parseFloat(n1) % parseFloat(n2);
+
+        ola()
+
+        var readlineSync = require("readline-sync")
+        var n1 = parseFloat(prompt("\nDigite o primeiro valor"))
+        var n2 = parseFloat(prompt("\nDigite o segundo valor"))
+        console.log("\n utilize \n1 => + \n2 => - \n3 => * \n4 => / \n5 => %")
+        var ope = parseFloat(prompt("\nDigite a operação"))
+    
+        if (ope == 1 || ope == 2 || ope == 3 || ope == 4){
+            var resul = calcP1(n1,n2,ope);
+        }
+        if (operador == 5){
+            var resul = calcP2(n1,n2,ope);
+        }
+        else{
+        console.log("\nNão existe essa operação")
+        }
+        console.log("\nO resultado foi: " + resul)
+
+        </script>
+</body>
+</html>
