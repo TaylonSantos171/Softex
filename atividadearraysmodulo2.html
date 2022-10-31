@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+
+    const notas = ["A", "B", "A+", "F", "C", "D"];
+
+    const Tv = {marca: 'Lg', tamanho: '52', modelo: 'smart'}
+
+        function escola()
+        {
+        console.log("\nQuais foram as notas\n");
+            for (const i of notas) 
+         {
+         console.log(i);
+         }
+        }
+
+        function catalago()
+        {
+        console.log("\nAs informações da Tv sao essas: \n")
+            for (const index in Tv)
+         {
+         console.log(`${index} : ${Tv[index]}`)
+         }
+        }
+
+    estudo()
+    catalogo()
+
+    </script>
+</body>
+</html>
