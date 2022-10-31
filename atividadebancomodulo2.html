@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco</title>
+</head>
+<body>
+    <script>
+
+        function banco(conta, saldo, tipo){
+            this.conta = conta;
+            this.saldo = saldo;
+            this.tipo = tipo;
+            mostrar = viewsaldo()
+            {
+                console.log(this.saldo);
+            }
+            numero = numeroconta()
+            {
+                console.log(conta);
+            }
+            deposit = depositar(valor)
+            {
+                this.saldo += valor;
+            }
+            saq = saque()
+            {
+                this.saldo -= valor;
+            }
+        }
+        var readlineSync = require("readline-sync")
+        var banco = new banco(5432, 600, "contacorrente");
+        console.log("consutando a conta ")
+        numeroconta()
+        console.log ("seu saldo é de: ")
+        viewsaldo()
+        var deposito = readlineSync.question("\nValor do deposito ");
+        valor = parseFloat(deposito);
+        depositar(valor);
+        viewsaldo();
+        var saque = readlineSync.question("\nValor do saque ");
+        valor = parseFloat(saque);
+        saque(valor)
+        viewsaldo
+
+
+    </script>
+</body>
+</html>
