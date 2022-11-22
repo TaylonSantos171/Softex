@@ -1,0 +1,20 @@
+* {
+ margin: 0px;
+ padding: 0px;
+}
+
+body {
+    background: c9c9c9;
+    display: flex;
+    margin: 3px;
+    font-family: cursive;
+}
+
+header {
+    text-align: center;
+    font-size: medium;
+}
+
+footer {
+    text-decoration: none;
+}
