@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+    flex: 1 1 100vw;
+    background: darkslategray;
+}
+
+button {
+    background: gray;
+    color: lemonchiffon;
+    border: 0px;
+    height: 75px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 550px;
+}
+
+section button {
+    margin-top: 150px;
+}
+
+h1 {
+    font-size: 30px;
+}
