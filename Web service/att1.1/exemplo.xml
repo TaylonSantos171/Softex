@@ -1,0 +1,34 @@
+POST /Cliente HTTP/1.1
+Host: www.minhaempresa.com
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: 200
+
+<?xml version="1.0"?>
+<soap:Envelope
+xmlns:soap="http://www.w3.org/2003/05/soap-envelope/"
+soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
+<soap:Body xmlns:m="http://www.minhaempresa.com/consultaCliente">
+  <m:consultaCliente>
+    <m:cpf>12345678911</m:cpf>
+  </m:consultaCliente>
+</soap:Body>
+</soap:Envelope>
+
+ 
+HTTP/1.1 200 OK
+Content-Type: application/soap+xml; charset=utf-8
+Content-Length: 200
+
+<?xml version="1.0"?>
+<soap:Envelope
+xmlns:soap="http://www.w3.org/2003/05/soap-envelope/"
+soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
+<soap:Body xmlns:m="http://www.minhaempresa.com/consultaCliente">
+  <m:consultaClienteResponse>
+    <m:nome>Tiago Taylon Santos Silva</m:nome>
+    <m:endereco>Rua Dom Luiz, 211</m:endereco>
+    <m:telefone>(81) 9.9658-5136</m:telefone>
+    <m:data-nascimento>20/12/2004</m:data-nascimento>
+  </m:consultaClienteResponse>
+</soap:Body>
+</soap:Envelope>
