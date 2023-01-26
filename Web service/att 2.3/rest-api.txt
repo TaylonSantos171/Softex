@@ -1,0 +1,17 @@
+1. Mesma interface
+Todas as solicitações feitas por meio de uma API REST devem respeitar as regras de formatação dessa API. Não importa qual cliente faz o pedido, você deve colocar todas as informações onde qualquer outro cliente puder. Um exemplo é a URL (ou Uniform Resource Locator) usada para identificar um recurso em HTTP, que é um exemplo de URI (Uniform Resource Identifier) ​​mais acessível.
+
+2. Separação de cliente e servidor
+A API REST requer que os aplicativos cliente e servidor sejam completamente independentes um do outro. O cliente só precisa saber o nome completo do recurso que procura no ambiente virtual permitido pela API. Caso contrário, a única informação que o cliente e o servidor têm entre si são as informações trocadas por meio da API.
+
+3. Nenhum estado
+Cada solicitação do cliente deve conter todas as informações necessárias para o processamento, e o servidor não precisa armazenar nenhuma informação sobre a solicitação recebida. Não há conceito de sessão na arquitetura da API REST e o servidor não tem estado para nenhum cliente específico.
+
+4. Capacidade de armazenamento
+Ao contrário de não haver estado de servidor por cliente, os recursos devem poder ser armazenados em um ou mais locais dentro ou entre o cliente e o servidor. No caso de um servidor, se um determinado recurso for disponibilizado e for solicitado novamente dentro de um determinado período de tempo, esse recurso será armazenado em cache para obter a resposta instantânea mais recente. O cliente deve tomar a mesma decisão sobre o valor recebido. O servidor indicará por meio de uma API que o recurso pode ser armazenado localmente e com segurança para o cliente, incluindo o tempo de vida dos dados, se aplicável. O design do repositório, embora não faça parte da especificação da API RESTful, é fundamental para o desempenho e os designers de API devem saber como usar isso na prática.
+
+5. Estrutura do sistema em camadas
+O resultado do isolamento cliente-servidor, estado sem estado e cache é que o cliente não consegue adivinhar se está se comunicando diretamente com o servidor que possui um determinado recurso ou se é atendido por um intermediário, como um provedor de serviços, um compartilhador de carga ou não. , sistema de entrega de conteúdo ou outro subsistema mais próximo do cliente do que do servidor. Isso dá aos desenvolvedores de infraestrutura e sistemas mais flexibilidade para aumentar a eficiência e a confiabilidade do atendimento de pedidos em toda a infraestrutura global com e sem fio. Isso está abaixo do desempenho de computação de borda.
+
+6. Código sob demanda
+Embora as APIs REST possam e geralmente forneçam dados para uso dos clientes, é cada vez mais comum que o código distribuído seja usado pelos clientes, como objetos Java ou aplicativos da web Javascript. Se utilizado, este código só pode ser ativado a pedido do cliente.
