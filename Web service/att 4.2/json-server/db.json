@@ -1,0 +1,32 @@
+{
+    "series": [
+      {
+        "serie": 1,
+        "duração": 1,
+        "name": "rick and morty",
+        "id": 1
+      },
+      {
+        "serie": 2,
+        "duração": 2,
+        "name": "adventure time",
+        "id": 2
+      },
+      {
+        "serie": 1,
+        "duração": 3,
+        "name": "Dragon Ball gt",
+        "id": 3
+      }
+    ],
+    "prazos": [
+      {
+        "serie": 1,
+        "name": "Pronto"
+      },
+      {
+        "serie": 2,
+        "name": "Em produção"
+      }
+    ]
+  }

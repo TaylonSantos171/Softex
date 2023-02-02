@@ -1,0 +1,13 @@
+Resources
+  http://localhost:5050/series
+  http://localhost:5050/prazos
+
+  Home
+  http://localhost:5050
+
+
+GET /series 200 18.456 ms - 424
+POST /series 201 39.798 ms - 69
+PUT /series/2 200 8.245 ms - 69
+DELETE /series/2 200 38.087 ms - 2
+GET /series 200 9.561 ms - 424
