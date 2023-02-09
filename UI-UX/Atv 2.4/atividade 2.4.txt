@@ -1,0 +1,4 @@
+Uma empresa, que atua com o desenvolvimento de softwares e apps para smartphones, está criando um aplicativo para uma galeria de arte. O aplicativo permite que os clientes da região possam conhecer ou adquirir obras disponíveis no lugar, marcando visitas e reservando produtos. No entanto, a empresa está preocupada com a interface e os comandos.
+O que você recomenda para diminuir essas inseguranças e os riscos?
+
+Recomendo prototipar a interface e as diretivas que a aplicação terá. Ao criar um protótipo simples, eles podem ver como os usuários e clientes se sentem e quais mudanças podem fazer para corrigir possíveis erros.

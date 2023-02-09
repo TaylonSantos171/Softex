@@ -1,0 +1,5 @@
+A startup EduDesign foi contratada pela escola Atena para desenvolver uma solução tecnológica educacional.
+A gestora escolar relatou que precisa de um aplicativo para gerenciar as notas dos estudantes e de uma comunicação mais direta com os responsáveis pelos alunos.
+Seguindo as etapas do Design Thinking, a equipe da startup desenvolveu um protótipo do aplicativo, mas não sabe se atende às expectativas reais dos envolvidos. Quais estratégias você utilizaria para a solução deste desafio?
+
+O protótipo pode ser levado ao gestor e aos professores para que testem como dar nota, como se comunicar com os pais e se algum deles tiver filhos na escola, como seria a experiência dos pais vendo as notas e recebendo comunicados dos professores e o gerente. Então a equipe recebe feedback de todos e vê os pontos positivos e negativos das modificações.
